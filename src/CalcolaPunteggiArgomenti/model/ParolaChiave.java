@@ -65,7 +65,10 @@ public class ParolaChiave {
 
 	public void aumentaPunteggio(Integer k) {
 		
-		punteggi[k-1]++;		
+		if(argomenti.contains(k))
+			punteggi[k-1]++;
+		
+		//punteggi[k-1]++;
 	}
 
 	public void addArgomento(int argomento) {
